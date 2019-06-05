@@ -1,0 +1,2024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.michaelxiong.myapplication.PeriodicTableActivity">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/hydrogen"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_orange_dark"
+                    android:text="1\nH"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/helium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="1336dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_purple"
+                    android:text="2\nHe"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/hydrogen"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/lithium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="3\nLi"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/hydrogen" />
+
+                <Button
+                    android:id="@+id/beryllium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:text="4\nBe"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/lithium"
+                    app:layout_constraintTop_toBottomOf="@+id/hydrogen" />
+
+                <Button
+                    android:id="@+id/boron"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="838dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="5\nB"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/beryllium"
+                    app:layout_constraintTop_toBottomOf="@+id/hydrogen" />
+
+                <Button
+                    android:id="@+id/carbon"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_orange_dark"
+                    android:text="6\nC"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/boron"
+                    app:layout_constraintTop_toBottomOf="@+id/hydrogen" />
+
+                <Button
+                    android:id="@+id/nitrogen"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_orange_dark"
+                    android:text="7\nN"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/carbon"
+                    app:layout_constraintTop_toBottomOf="@+id/hydrogen" />
+
+                <Button
+                    android:id="@+id/oxygen"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_red_light"
+                    android:text="8\nO"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/nitrogen"
+                    app:layout_constraintTop_toBottomOf="@+id/hydrogen" />
+
+                <Button
+                    android:id="@+id/fluorine"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="9\nF"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/oxygen"
+                    app:layout_constraintTop_toBottomOf="@+id/hydrogen" />
+
+                <Button
+                    android:id="@+id/neon"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_purple"
+                    android:text="10\nNe"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/fluorine"
+                    app:layout_constraintTop_toBottomOf="@+id/hydrogen" />
+
+                <Button
+                    android:id="@+id/sodium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="11\nNa"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/lithium" />
+
+                <Button
+                    android:id="@+id/magnesium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:text="12\nMg"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/sodium"
+                    app:layout_constraintTop_toBottomOf="@+id/lithium" />
+
+                <Button
+                    android:id="@+id/aluminium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="838dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="13\nAl"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/magnesium"
+                    app:layout_constraintTop_toBottomOf="@+id/lithium" />
+
+                <Button
+                    android:id="@+id/silicon"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="14\nSi"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/aluminium"
+                    app:layout_constraintTop_toBottomOf="@+id/lithium" />
+
+                <Button
+                    android:id="@+id/phosphorous"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_orange_dark"
+                    android:text="15\nP"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/silicon"
+                    app:layout_constraintTop_toBottomOf="@+id/lithium" />
+
+                <Button
+                    android:id="@+id/sulfur"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_red_light"
+                    android:text="16\nS"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/phosphorous"
+                    app:layout_constraintTop_toBottomOf="@+id/lithium" />
+
+                <Button
+                    android:id="@+id/chlorine"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="17\nCl"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/sulfur"
+                    app:layout_constraintTop_toBottomOf="@+id/lithium" />
+
+                <Button
+                    android:id="@+id/argon"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_purple"
+                    android:text="18\nAr"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/chlorine"
+                    app:layout_constraintTop_toBottomOf="@+id/lithium" />
+
+                <Button
+                    android:id="@+id/potassium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="19\nK"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/calcium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:text="20\nRb"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/potassium"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/scandium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="21\nSc"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/calcium"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/titanium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="22\nTi"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/scandium"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/vanadium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="23\nV"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/titanium"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/chromium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="24\nCr"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/vanadium"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/manganese"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="25\nMn"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/chromium"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/iron"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="26\nFe"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/manganese"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/cobalt"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="27\nCo"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/iron"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/nickel"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="28\nNi"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/cobalt"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/copper"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="29\nCu"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/nickel"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/zinc"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="30\nZn"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/copper"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/gallium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="31\nGa"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/zinc"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/germanium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="32\nGe"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/gallium"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/arsenic"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="33\nAr"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/germanium"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/selenium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_red_light"
+                    android:text="34\nSe"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/arsenic"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/bromine"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="35\nBr"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/selenium"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/krypton"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_purple"
+                    android:text="36\nKr"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/bromine"
+                    app:layout_constraintTop_toBottomOf="@+id/sodium" />
+
+                <Button
+                    android:id="@+id/rubidium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="37\nRb"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/strontium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:text="38\nSr"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/rubidium"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/yttrium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="39\nY"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/strontium"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/zirconium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="40\nZr"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/yttrium"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/niobium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="41\nNb"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/zirconium"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/molybdenum"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="42\nMo"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/niobium"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/technetium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="43\nTc"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/molybdenum"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/ruthenium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="44\nRu"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/technetium"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/rhodium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="45\nRh"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/ruthenium"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/palladium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="46\nPd"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/rhodium"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/silver"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="47\nAg"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/palladium"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/cadmium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="48\nCd"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/silver"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/indium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="49\nIn"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/cadmium"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/tin"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="50\nSn"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/indium"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/antimony"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="51\nSb"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/tin"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/tellerium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="52\nTe"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/antimony"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/iodine"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="53\nI"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/tellerium"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/xenon"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_purple"
+                    android:text="54\nXe"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/iodine"
+                    app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+                <Button
+                    android:id="@+id/caesium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="55\nCs"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/barium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:text="56\nBa"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/caesium"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/lanthanides_textView"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="Lanth-\nanides"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/barium"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/lanthanum"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="57\nLa"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/barium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/cerium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="58\nCe"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/lanthanum"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/praseodynium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="59\nPr"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/cerium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/neodynium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="60\nNd"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/praseodynium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/promethium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="61\nPm"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/neodynium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/samarium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="62\nSm"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/promethium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/europium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="63\nEu"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/samarium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/gadolinium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="64\nGd"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/europium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/terbium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="65\nTb"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/gadolinium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/dysprosium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="66\nDy"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/terbium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/holmium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="67\nHo"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/dysprosium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/erbium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="68\nEr"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/holmium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/thulium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="69\nTm"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/erbium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/ytterbium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="70\nYb"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/thulium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/lutetium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="91dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="71\nLu"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/ytterbium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/hafnium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="72\nHf"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/lanthanides_textView"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/tantalum"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="73\nTa"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/hafnium"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/tungsten"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="74\nW"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/tantalum"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/rhenium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="75\nRe"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/tungsten"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/osmium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="76\nOs"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/rhenium"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/iridium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="77\nIr"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/osmium"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/platinum"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="78\nPt"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/iridium"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/gold"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="79\nAu"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/platinum"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/mercury"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="80\nHg"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/gold"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/thallium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="81\nTl"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/mercury"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/lead"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="82\nPb"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/thallium"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/bismuth"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="83\nBi"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/lead"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/polonium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="84\nPo"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/bismuth"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/astatine"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="85\nAt"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/polonium"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/radon"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_purple"
+                    android:text="86\nRn"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/astatine"
+                    app:layout_constraintTop_toBottomOf="@+id/rubidium" />
+
+                <Button
+                    android:id="@+id/francium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="87\nFr"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/radium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:text="88\nRa"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/francium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/actinides_textView"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#F7D624"
+                    android:text="Acti-\nnides"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/radium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/actinium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="89\nAc"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/radium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/thorium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="90\nTh"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/actinium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/protactinium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="91\nPa"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/thorium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/uranium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="92\nU"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/protactinium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/neptunium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="93\nNp"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/uranium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/plutonium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="94\nPu"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/neptunium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/americium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="95\nAm"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/plutonium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/curium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="96\nCm"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/americium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/berkelium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="97\nBk"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/curium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/californium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="98\nCf"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/berkelium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/einsteinium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="99\nEs"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/californium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/fermium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="100\nFm"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/einsteinium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/mendelevium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="101\nMd"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/fermium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/nobelium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="102\nNo"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/mendelevium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/lawrencium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="176dp"
+                    android:background="#F7D624"
+                    android:text="103\nLw"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/nobelium"
+                    app:layout_constraintTop_toBottomOf="@+id/francium" />
+
+                <Button
+                    android:id="@+id/rutherfordium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="104\nRf"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/actinides_textView"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/dubnium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="105\nDb"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/rutherfordium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/seaborgium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="106\nSg"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/dubnium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/bohrium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="107\nBh"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/seaborgium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/hassium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="108\nHs"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/bohrium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/meitnerium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#FF007F"
+                    android:text="109\nMt"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/hassium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/darmstadtium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#FF007F"
+                    android:text="110\nDs"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/meitnerium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/roentgenium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#FF007F"
+                    android:text="111\nRg"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/darmstadtium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/copernicium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="112\nCn"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/roentgenium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/nihonium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#FF007F"
+                    android:text="113\nNh"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/copernicium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/flerovium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#FF007F"
+                    android:text="114\nFl"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/nihonium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/moscovium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#FF007F"
+                    android:text="115\nMc"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/flerovium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/livermorium"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#FF007F"
+                    android:text="116\nLv"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/moscovium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/tennessine"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#FF007F"
+                    android:text="117\nTs"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/livermorium"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <Button
+                    android:id="@+id/oganesson"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#FF007F"
+                    android:text="118\nOg"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/tennessine"
+                    app:layout_constraintTop_toBottomOf="@+id/caesium" />
+
+                <TextView
+                    android:id="@+id/legened_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="174dp"
+                    android:text="Legend:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toEndOf="@+id/hydrogen"
+                    app:layout_constraintTop_toTopOf="@+id/hydrogen" />
+
+                <TextView
+                    android:id="@+id/alkali_legend_text_view"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="Alkali Metals"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/legened_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/legened_text_view" />
+
+                <TextView
+                    android:id="@+id/alkaline_legend_text_view"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:text="Alkaline Earth Metals"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/legened_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/alkali_legend_text_view" />
+
+                <TextView
+                    android:id="@+id/transition_legend_text_view"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="Transition Metals"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/legened_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/alkaline_legend_text_view" />
+
+                <TextView
+                    android:id="@+id/other_metal_legend_text_view"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="Other Metals"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/alkali_legend_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/legened_text_view" />
+
+                <TextView
+                    android:id="@+id/metalloid_legend_text_view"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="Metalloids"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/alkaline_legend_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/alkali_legend_text_view" />
+
+                <TextView
+                    android:id="@+id/nonmetal_legend_text_view"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_orange_dark"
+                    android:text="Other Nonmetals"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/transition_legend_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/alkaline_legend_text_view" />
+
+                <TextView
+                    android:id="@+id/chalcogen_legend_text_view"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_red_light"
+                    android:text="Chalcogens"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/other_metal_legend_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/legened_text_view" />
+
+                <TextView
+                    android:id="@+id/halogen_legend_text_view"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="Halogens"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/metalloid_legend_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/alkali_legend_text_view" />
+
+                <TextView
+                    android:id="@+id/noble_legend_text_view"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_purple"
+                    android:text="Noble Gases"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/nonmetal_legend_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/alkaline_legend_text_view" />
+
+                <TextView
+                    android:id="@+id/lanthanides_legend_text_view"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="Lanthanides"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/chalcogen_legend_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/legened_text_view" />
+
+                <TextView
+                    android:id="@+id/actinides_legend_text_view"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#F7D624"
+                    android:text="Actinides"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/halogen_legend_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/alkali_legend_text_view" />
+
+                <TextView
+                    android:id="@+id/unknown_legend_text_view"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#FF007F"
+                    android:text="Unclassified"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/noble_legend_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/alkaline_legend_text_view" />
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+
+
+    </HorizontalScrollView>
+    <Button
+        android:id="@+id/periodic_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Back"/>
+</android.support.constraint.ConstraintLayout>

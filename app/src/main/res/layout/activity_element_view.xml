@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.michaelxiong.myapplication.ElementViewActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/state_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/boiling_text_view"
+                tools:text="State: Plasma" />
+
+            <TextView
+                android:id="@+id/density_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/state_text_view"
+                tools:text="Density: 0" />
+
+            <TextView
+                android:id="@+id/melting_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radius_text_view"
+                tools:text="Melting Point: 0" />
+
+            <TextView
+                android:id="@+id/boiling_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/melting_text_view"
+                tools:text="Boiling Point: 0" />
+
+            <TextView
+                android:id="@+id/electron_config_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/outer_ring_image_view"
+                tools:text="[Noble] 0s^2 0p^6" />
+
+            <TextView
+                android:id="@+id/element_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Element Name" />
+
+            <TextView
+                android:id="@+id/atomic_number_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/element_name_text_view"
+                tools:text="Atomic Number: 0" />
+
+            <ImageView
+                android:id="@+id/nucleus_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/atomic_number_text_view"
+                app:srcCompat="@drawable/circle" />
+
+            <ImageView
+                android:id="@+id/inner_ring_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/nucleus_image_view"
+                app:layout_constraintEnd_toEndOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toStartOf="@+id/nucleus_image_view"
+                app:layout_constraintTop_toTopOf="@+id/nucleus_image_view"
+                app:srcCompat="@drawable/inner_ring" />
+
+            <ImageView
+                android:id="@+id/outer_ring_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="396dp"
+                app:layout_constraintBottom_toBottomOf="@+id/nucleus_image_view"
+                app:layout_constraintEnd_toEndOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toStartOf="@+id/nucleus_image_view"
+                app:layout_constraintTop_toTopOf="@+id/nucleus_image_view"
+                app:srcCompat="@drawable/outer_ring" />
+
+            <TextView
+                android:id="@+id/atomic_symbol_text_view"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="@+id/nucleus_image_view"
+                app:layout_constraintEnd_toEndOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toStartOf="@+id/nucleus_image_view"
+                app:layout_constraintTop_toTopOf="@+id/nucleus_image_view"
+                tools:text="Aa" />
+
+            <TextView
+                android:id="@+id/period_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/group_text_view"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/electron_config_text_view"
+                tools:text="Period: 0" />
+
+            <TextView
+                android:id="@+id/group_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/period_text_view"
+                app:layout_constraintTop_toBottomOf="@+id/electron_config_text_view"
+                tools:text="Group: 0" />
+
+            <TextView
+                android:id="@+id/mass_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/period_text_view"
+                app:layout_constraintVertical_chainStyle="spread_inside"
+                tools:text="Atomic Mass: 0" />
+
+            <TextView
+                android:id="@+id/radius_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mass_text_view"
+                tools:text="Atomic Radius: 0" />
+
+            <ImageView
+                android:id="@+id/middle_ring_image_view"
+                android:layout_width="296dp"
+                android:layout_height="316dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/nucleus_image_view"
+                app:layout_constraintEnd_toEndOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toStartOf="@+id/nucleus_image_view"
+                app:layout_constraintTop_toTopOf="@+id/nucleus_image_view"
+                app:srcCompat="@drawable/middle_ring" />
+
+            <ImageView
+                android:id="@+id/sp_electron_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toStartOf="@+id/nucleus_image_view"
+                app:layout_constraintTop_toTopOf="@+id/outer_ring_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/sp_electron_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toEndOf="@+id/nucleus_image_view"
+                app:layout_constraintTop_toTopOf="@+id/outer_ring_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/sp_electron_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toStartOf="@+id/outer_ring_image_view"
+                app:layout_constraintTop_toTopOf="@+id/nucleus_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/sp_electron_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toStartOf="@+id/outer_ring_image_view"
+                app:layout_constraintTop_toBottomOf="@+id/nucleus_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/sp_electron_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/outer_ring_image_view"
+                app:layout_constraintEnd_toStartOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toStartOf="@+id/nucleus_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/sp_electron_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/outer_ring_image_view"
+                app:layout_constraintEnd_toEndOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toEndOf="@+id/nucleus_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/sp_electron_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/nucleus_image_view"
+                app:layout_constraintEnd_toEndOf="@+id/outer_ring_image_view"
+                app:layout_constraintTop_toTopOf="@+id/nucleus_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/sp_electron_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/nucleus_image_view"
+                app:layout_constraintEnd_toEndOf="@+id/outer_ring_image_view"
+                app:layout_constraintTop_toBottomOf="@+id/nucleus_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/d_electron_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/nucleus_image_view"
+                app:layout_constraintTop_toTopOf="@+id/middle_ring_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/d_electron_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/atomic_symbol_text_view"
+                app:layout_constraintStart_toStartOf="@+id/atomic_symbol_text_view"
+                app:layout_constraintTop_toTopOf="@+id/middle_ring_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/d_electron_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toStartOf="@+id/middle_ring_image_view"
+                app:layout_constraintTop_toTopOf="@+id/nucleus_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/d_electron_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/atomic_symbol_text_view"
+                app:layout_constraintEnd_toStartOf="@+id/middle_ring_image_view"
+                app:layout_constraintStart_toStartOf="@+id/middle_ring_image_view"
+                app:layout_constraintTop_toBottomOf="@+id/atomic_symbol_text_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/d_electron_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/middle_ring_image_view"
+                app:layout_constraintEnd_toStartOf="@+id/nucleus_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/d_electron_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/middle_ring_image_view"
+                app:layout_constraintEnd_toStartOf="@+id/atomic_symbol_text_view"
+                app:layout_constraintStart_toStartOf="@+id/atomic_symbol_text_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/d_electron_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/middle_ring_image_view"
+                app:layout_constraintEnd_toEndOf="@+id/middle_ring_image_view"
+                app:layout_constraintStart_toEndOf="@+id/atomic_symbol_text_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/d_electron_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/middle_ring_image_view"
+                app:layout_constraintEnd_toEndOf="@+id/middle_ring_image_view"
+                app:layout_constraintTop_toBottomOf="@+id/atomic_symbol_text_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/d_electron_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/middle_ring_image_view"
+                app:layout_constraintStart_toEndOf="@+id/atomic_symbol_text_view"
+                app:layout_constraintTop_toTopOf="@+id/middle_ring_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/d_electron_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/atomic_symbol_text_view"
+                app:layout_constraintEnd_toEndOf="@+id/middle_ring_image_view"
+                app:layout_constraintTop_toTopOf="@+id/middle_ring_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/f_electron_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/atomic_symbol_text_view"
+                app:layout_constraintTop_toTopOf="@+id/inner_ring_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/f_electron_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/inner_ring_image_view"
+                app:layout_constraintStart_toStartOf="@+id/atomic_symbol_text_view"
+                app:layout_constraintTop_toTopOf="@+id/inner_ring_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/f_electron_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/atomic_symbol_text_view"
+                app:layout_constraintStart_toStartOf="@+id/inner_ring_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/f_electron_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/inner_ring_image_view"
+                app:layout_constraintStart_toStartOf="@+id/inner_ring_image_view"
+                app:layout_constraintTop_toTopOf="@+id/atomic_symbol_text_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/f_electron_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toStartOf="@+id/inner_ring_image_view"
+                app:layout_constraintTop_toBottomOf="@+id/atomic_symbol_text_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/f_electron_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/inner_ring_image_view"
+                app:layout_constraintTop_toBottomOf="@+id/nucleus_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/f_electron_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/f_electron_9"
+                app:layout_constraintEnd_toStartOf="@+id/atomic_symbol_text_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/f_electron_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/inner_ring_image_view"
+                app:layout_constraintStart_toStartOf="@+id/atomic_symbol_text_view"
+                app:layout_constraintTop_toBottomOf="@+id/inner_ring_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/f_electron_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="10dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/inner_ring_image_view"
+                app:layout_constraintStart_toEndOf="@+id/atomic_symbol_text_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/f_electron_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/f_electron_3"
+                app:layout_constraintStart_toEndOf="@+id/nucleus_image_view"
+                app:layout_constraintTop_toBottomOf="@+id/f_electron_3"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/f_electron_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="34dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/atomic_symbol_text_view"
+                app:layout_constraintStart_toEndOf="@+id/nucleus_image_view"
+                app:layout_constraintTop_toBottomOf="@+id/atomic_symbol_text_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/f_electron_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/inner_ring_image_view"
+                app:layout_constraintStart_toEndOf="@+id/inner_ring_image_view"
+                app:layout_constraintTop_toTopOf="@+id/atomic_symbol_text_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/f_electron_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginStart="16dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toEndOf="@+id/atomic_symbol_text_view"
+                app:srcCompat="@drawable/electron" />
+
+            <ImageView
+                android:id="@+id/f_electron_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="10dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toEndOf="@+id/nucleus_image_view"
+                app:srcCompat="@drawable/electron" />
+
+            <TextView
+                android:id="@+id/outer_shell_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="64dp"
+                android:layout_marginStart="32dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toStartOf="@+id/outer_ring_image_view"
+                tools:text="n=0" />
+
+            <TextView
+                android:id="@+id/middle_shell_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginStart="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/nucleus_image_view"
+                app:layout_constraintStart_toStartOf="@+id/middle_ring_image_view"
+                tools:text="n=-1" />
+
+            <TextView
+                android:id="@+id/inner_shell_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/atomic_symbol_text_view"
+                app:layout_constraintEnd_toStartOf="@+id/nucleus_image_view"
+                tools:text="n=-2" />
+
+            <TextView
+                android:id="@+id/eaffinity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/density_text_view"
+                tools:text="Electron Affinity: 0" />
+
+            <TextView
+                android:id="@+id/first_ie_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eaffinity_text_view"
+                tools:text="First Ionization Energy: 0" />
+
+            <TextView
+                android:id="@+id/electroneg_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@+id/first_ie_text_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteX="256dp"
+                tools:text="Electronegativity: 0" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/element_view_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
