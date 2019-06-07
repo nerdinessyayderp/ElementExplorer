@@ -25,21 +25,22 @@
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/intro_text_view">
         <android.support.constraint.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
             <Button
                 android:id="@+id/periodic_table_activity_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
                 android:text="Periodic Table"
-                app:layout_constraintTop_toBottomOf="@id/outer_ring_image_view"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/outer_ring_image_view" />
 
             <ImageView
                 android:id="@+id/nucleus_image_view"
@@ -451,6 +452,18 @@
                 app:layout_constraintBottom_toTopOf="@+id/nucleus_image_view"
                 app:layout_constraintStart_toEndOf="@+id/nucleus_image_view"
                 app:srcCompat="@drawable/electron" />
+
+            <Button
+                android:id="@+id/quiz_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Quiz"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/periodic_table_activity_button" />
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 
