@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ElementViewActivity" />
-        <activity android:name=".PeriodicTableActivity"></activity>
+        <activity android:name=".PeriodicTableActivity" />
+        <activity android:name=".QuizActivity"></activity>
     </application>
 
 </manifest>

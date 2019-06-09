@@ -54,7 +54,8 @@ public class HomePageActivity extends AppCompatActivity {
         quizButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent i = new Intent(HomePageActivity.this, QuizActivity.class);
+                startActivity(i);
             }
         });
     }
