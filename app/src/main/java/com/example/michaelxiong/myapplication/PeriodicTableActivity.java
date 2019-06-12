@@ -21,15 +21,31 @@ public class PeriodicTableActivity extends AppCompatActivity {
         for(int i = 0; i < 119; i++){
             elementArray.add(0);
         }
-        assignButtonOnClickListener();
+        if(getIntent().getBooleanExtra("interact", true)){
+            assignButtonOnClickListener();
+        }
         Button backButton = findViewById(R.id.periodic_back_button);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(PeriodicTableActivity.this, HomePageActivity.class);
-                startActivity(i);
+                if(getIntent().getBooleanExtra("interact", true)) {
+                    Intent i = new Intent(PeriodicTableActivity.this, HomePageActivity.class);
+                    startActivity(i);
+                }
+                else{
+                    Intent i = new Intent(PeriodicTableActivity.this, QuizActivity.class);
+                    Intent n = getIntent();
+                    i.putExtra("elementOne", n.getIntExtra("elementOne", 0));
+                    i.putExtra("elementTwo", n.getIntExtra("elementTwo", 0));
+                    i.putExtra("questionType", n.getIntExtra("questionType", 0));
+                    i.putExtra("questionsTotal", n.getIntExtra("questionsTotal", 0));
+                    i.putExtra("questionsCorrect", n.getIntExtra("questionsCorrect", 0));
+                    i.putExtra("return", true);
+                    startActivity(i);
+                }
             }
         });
+
 //        for(int i = 1; i < 118; i++){
 //            System.out.println(i + ", "+elementArray.get(i));
 //        }

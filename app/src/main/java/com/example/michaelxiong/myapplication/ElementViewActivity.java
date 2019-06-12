@@ -177,11 +177,9 @@ public class ElementViewActivity extends AppCompatActivity {
                             space = line.indexOf(" ");
                             if (tab != -1 && space!= -1){
                                 if((tab < space)||(tab == space)){
-                                    elementProperties.add(12, line.substring(0, tab));
                                     line = line.substring(tab + 1);
                                 }
                                 else if(space < tab){
-                                    elementProperties.add(12, line.substring(0, space));
                                     line = line.substring(space + 1);
                                 }
                                 while(line.substring(0,1).equals("\t")||line.substring(0,1).equals(" ")){
@@ -189,26 +187,57 @@ public class ElementViewActivity extends AppCompatActivity {
                                 }
                             }
                             else if(space != -1){
-                                elementProperties.add(12, line.substring(0, space));
                                 line = line.substring(space + 1);
                                 while(line.substring(0,1).equals("\t")||line.substring(0,1).equals(" ")){
                                     line = line.substring(1);
                                 }
                             }
                             else if(tab != -1){
-                                elementProperties.add(12, line.substring(0, tab));
                                 line = line.substring(tab + 1);
                                 while(line.substring(0,1).equals("\t")||line.substring(0,1).equals(" ")){
                                     line = line.substring(1);
                                 }
                             }
                             else{
-                                elementProperties.add(12, "-1.0");
                             }
-                            System.out.println(elementProperties.toString());
                             System.out.println(line);
                             System.out.println("tab: " + tab + ", space: " + space);
                         }
+                        tab = line.indexOf("\t");
+                        space = line.indexOf(" ");
+                        if (tab != -1 && space!= -1){
+                            if((tab < space)||(tab == space)){
+                                elementProperties.add(12, line.substring(0, tab));
+                                line = line.substring(tab + 1);
+                            }
+                            else if(space < tab){
+                                elementProperties.add(12, line.substring(0, space));
+                                line = line.substring(space + 1);
+                            }
+                            while(line.substring(0,1).equals("\t")||line.substring(0,1).equals(" ")){
+                                line = line.substring(1);
+                            }
+                        }
+                        else if(space != -1){
+                            elementProperties.add(12, line.substring(0, space));
+                            line = line.substring(space + 1);
+                            while(line.substring(0,1).equals("\t")||line.substring(0,1).equals(" ")){
+                                line = line.substring(1);
+                            }
+                        }
+                        else if(tab != -1){
+                            elementProperties.add(12, line.substring(0, tab));
+                            line = line.substring(tab + 1);
+                            while(line.substring(0,1).equals("\t")||line.substring(0,1).equals(" ")){
+                                line = line.substring(1);
+                            }
+                        }
+                        else{
+                            elementProperties.add(12, "-1.0");
+                        }
+                        System.out.println(elementProperties.toString());
+                        System.out.println(line);
+                        System.out.println("tab: " + tab + ", space: " + space);
                     }
                 }
             }

@@ -3,7 +3,7 @@
     <string name="title_activity_element_view">ElementViewActivity</string>
     <string-array name="answers_array">
         <item>_____</item>
-        <item>less</item>
+        <item>lower</item>
         <item>greater</item>
     </string-array>
 
