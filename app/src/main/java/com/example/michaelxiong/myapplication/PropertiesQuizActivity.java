@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.MultiAutoCompleteTextView;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -18,7 +17,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class QuizActivity extends AppCompatActivity {
+public class PropertiesQuizActivity extends AppCompatActivity {
 
     private TextView questionNumberView;
     private TextView elementOneView;
@@ -41,7 +40,7 @@ public class QuizActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz);
+        setContentView(R.layout.activity_properties_quiz);
         instantiateVariables();
         if(getIntent().getBooleanExtra("return", false)){
             Intent i = getIntent();
@@ -59,6 +58,7 @@ public class QuizActivity extends AppCompatActivity {
         elementOneView = findViewById(R.id.element_one_text_view);
         elementTwoView = findViewById(R.id.element_two_text_view);
         scoreView = findViewById(R.id.score_text_view);
+        scoreView.setText("Score: " + questionsCorrect + "/" + questionsTotal);
         scoreBar = findViewById(R.id.score_bar);
         incorrectBar = findViewById(R.id.incorrect_bar);
         comparisonView = findViewById(R.id.comparison_spinner);
@@ -66,7 +66,7 @@ public class QuizActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QuizActivity.this, HomePageActivity.class);
+                Intent i = new Intent(PropertiesQuizActivity.this, HomePageActivity.class);
                 startActivity(i);
             }
         });
@@ -82,8 +82,9 @@ public class QuizActivity extends AppCompatActivity {
         viewPeriodicTableButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QuizActivity.this, PeriodicTableActivity.class);
+                Intent i = new Intent(PropertiesQuizActivity.this, PeriodicTableActivity.class);
                 i.putExtra("interact", false);
+                i.putExtra("quiz type", "properties");
                 i.putExtra("elementOne", elementOne);
                 i.putExtra("elementTwo", elementTwo);
                 i.putExtra("questionType", questionType);

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.michaelxiong.myapplication.ConfigurationsQuizActivity">
+
+    <ProgressBar
+        android:id="@+id/incorrect_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:progressTint="?attr/colorError"
+        android:scaleX="-1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/score_bar"
+        style="@style/MyProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:indeterminate="false"
+        android:progressBackgroundTint="?attr/colorError"
+        android:progressTint="@android:color/holo_green_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/score_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Score: 0/0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/score_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Score: 0/0" />
+
+    <TextView
+        android:id="@+id/question_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Question: 0" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Back"
+        app:layout_constraintBottom_toTopOf="@+id/score_bar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toTopOf="@+id/score_bar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/periodic_table_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="View Periodic Table"
+        app:layout_constraintBottom_toTopOf="@+id/score_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/element_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/nobel_gas_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_number_text_view"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Element" />
+
+    <TextView
+        android:id="@+id/s_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="s^"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/d_shell_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/s_quantity_spinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/s_shell_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/nobel_gas_spinner" />
+
+    <Spinner
+        android:id="@+id/s_shell_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/s_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/s_text_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/s_text_view" />
+
+    <Spinner
+        android:id="@+id/s_quantity_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/s_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/f_shell_spinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/s_text_view"
+        app:layout_constraintTop_toTopOf="@+id/s_text_view" />
+
+    <TextView
+        android:id="@+id/f_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="f^"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/s_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/f_quantity_spinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/f_shell_spinner"
+        app:layout_constraintTop_toTopOf="@+id/s_text_view" />
+
+    <Spinner
+        android:id="@+id/f_shell_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/s_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/f_text_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/s_quantity_spinner"
+        app:layout_constraintTop_toTopOf="@+id/s_text_view" />
+
+    <Spinner
+        android:id="@+id/f_quantity_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/s_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/f_text_view"
+        app:layout_constraintTop_toTopOf="@+id/s_text_view" />
+
+    <Spinner
+        android:id="@+id/d_shell_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/periodic_table_button"
+        app:layout_constraintEnd_toStartOf="@+id/d_text_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_text_view" />
+
+    <TextView
+        android:id="@+id/d_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="d^"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/d_shell_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/d_quantity_spinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/d_shell_spinner"
+        app:layout_constraintTop_toTopOf="@+id/d_shell_spinner" />
+
+    <Spinner
+        android:id="@+id/d_quantity_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/d_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/p_shell_spinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/d_text_view"
+        app:layout_constraintTop_toTopOf="@+id/d_text_view" />
+
+    <Spinner
+        android:id="@+id/p_shell_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/d_quantity_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/p_text_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/d_quantity_spinner"
+        app:layout_constraintTop_toTopOf="@+id/d_quantity_spinner" />
+
+    <TextView
+        android:id="@+id/p_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="p^"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/p_shell_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/p_quantity_spinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/p_shell_spinner"
+        app:layout_constraintTop_toTopOf="@+id/p_shell_spinner" />
+
+    <Spinner
+        android:id="@+id/p_quantity_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/p_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/p_text_view"
+        app:layout_constraintTop_toTopOf="@+id/p_text_view" />
+
+    <Spinner
+        android:id="@+id/nobel_gas_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/s_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/element_text_view" />
+
+</android.support.constraint.ConstraintLayout>

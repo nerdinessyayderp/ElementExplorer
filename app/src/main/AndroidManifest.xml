@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".ElementViewActivity" />
         <activity android:name=".PeriodicTableActivity" />
-        <activity android:name=".QuizActivity"></activity>
+        <activity android:name=".PropertiesQuizActivity" />
+        <activity android:name=".ConfigurationsQuizActivity"></activity>
     </application>
 
 </manifest>

@@ -5,7 +5,7 @@
     xmlns:svgimageview="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.michaelxiong.myapplication.QuizActivity">
+    tools:context="com.example.michaelxiong.myapplication.PropertiesQuizActivity">
 
     <ProgressBar
         android:id="@+id/incorrect_bar"
@@ -44,6 +44,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:text="Score: 0/0"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/score_bar"
@@ -102,11 +103,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:lineSpacingExtra="8dp"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title"
         android:textSize="24sp"
-        android:lineSpacingExtra="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/score_text_view"
+        app:layout_constraintBottom_toTopOf="@+id/periodic_table_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -141,12 +142,10 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:text="View Periodic Table"
         app:layout_constraintBottom_toTopOf="@+id/score_text_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/element_two_text_view" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -1,30 +1,20 @@
 package com.example.michaelxiong.myapplication;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.res.Configuration;
-import android.net.wifi.p2p.WifiP2pManager;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.view.ActionMode;
-import android.util.AttributeSet;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-
-import java.util.EventListener;
 
 import static java.lang.Thread.sleep;
 
 public class HomePageActivity extends AppCompatActivity {
 
     private Button periodicActivityButton;
-    private Button quizButton;
+    private Button propertiesQuizButton;
+    private Button configurationsQuizButton;
+
     private long time_0;
     private boolean electrons_unfilled = true;
     private int s_filled = 0;
@@ -50,11 +40,19 @@ public class HomePageActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        quizButton = findViewById(R.id.quiz_button);
-        quizButton.setOnClickListener(new View.OnClickListener() {
+        propertiesQuizButton = findViewById(R.id.properties_quiz_button);
+        propertiesQuizButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(HomePageActivity.this, QuizActivity.class);
+                Intent i = new Intent(HomePageActivity.this, PropertiesQuizActivity.class);
+                startActivity(i);
+            }
+        });
+        configurationsQuizButton = findViewById(R.id.configurations_quiz_button);
+        configurationsQuizButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(HomePageActivity.this, ConfigurationsQuizActivity.class);
                 startActivity(i);
             }
         });

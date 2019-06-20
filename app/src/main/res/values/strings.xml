@@ -6,5 +6,89 @@
         <item>lower</item>
         <item>greater</item>
     </string-array>
+    <string-array name="s_shell_array">
+        <item>_</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="s_quantity_array">
+        <item>_</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="f_shell_array">
+        <item>_</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="f_quantity_array">
+        <item>_</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+    <string-array name="d_shell_array">
+        <item>_</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="d_quantity_array">
+        <item>_</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="p_shell_array">
+        <item>_</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="p_quantity_array">
+        <item>_</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="nobel_gas_array">
+        <item>___</item>
+        <item>[He]</item>
+        <item>[Ne]</item>
+        <item>[Ar]</item>
+        <item>[Kr]</item>
+        <item>[Xe]</item>
+        <item>[Rn]</item>
+    </string-array>
 
 </resources>

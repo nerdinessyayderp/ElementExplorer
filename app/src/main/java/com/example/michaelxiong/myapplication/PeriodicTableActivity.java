@@ -32,12 +32,21 @@ public class PeriodicTableActivity extends AppCompatActivity {
                     Intent i = new Intent(PeriodicTableActivity.this, HomePageActivity.class);
                     startActivity(i);
                 }
-                else{
-                    Intent i = new Intent(PeriodicTableActivity.this, QuizActivity.class);
+                else if(getIntent().getStringExtra("quiz type").equals("properties")){
+                    Intent i = new Intent(PeriodicTableActivity.this, PropertiesQuizActivity.class);
                     Intent n = getIntent();
                     i.putExtra("elementOne", n.getIntExtra("elementOne", 0));
                     i.putExtra("elementTwo", n.getIntExtra("elementTwo", 0));
                     i.putExtra("questionType", n.getIntExtra("questionType", 0));
+                    i.putExtra("questionsTotal", n.getIntExtra("questionsTotal", 0));
+                    i.putExtra("questionsCorrect", n.getIntExtra("questionsCorrect", 0));
+                    i.putExtra("return", true);
+                    startActivity(i);
+                }
+                else if(getIntent().getStringExtra("quiz type").equals("configurations")){
+                    Intent i = new Intent(PeriodicTableActivity.this, ConfigurationsQuizActivity.class);
+                    Intent n = getIntent();
+                    i.putExtra("atomic number", n.getIntExtra("atomic number", 0));
                     i.putExtra("questionsTotal", n.getIntExtra("questionsTotal", 0));
                     i.putExtra("questionsCorrect", n.getIntExtra("questionsCorrect", 0));
                     i.putExtra("return", true);
